@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General settings */
+
+body{
+    /* display: flex;
+    flex-direction: column;
+    height: 100%; */
+    background-color: #061321;
+}
+
+
+/* Greeting area */
+.greeting{
+    height: 100vh;
+    position: relative;
+}
+
+    /* Setting particles */
+
+    #particles-js{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    /* Styling text for greeting */
+    .home{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* Main area */
+.main{
+    background-color: red;
+}
+
+/* Footer area */
+.footer{
+    background-color: purple;
+}
