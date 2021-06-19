@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,10 +10,8 @@
 /* General settings */
 
 body{
-    /* display: flex;
-    flex-direction: column;
-    height: 100%; */
     background-color: #061321;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -33,10 +34,51 @@ body{
     .home{
         height: 100%;
         width: 100%;
+        position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+        .home h1{
+            font-family: 'Space Grotesk', sans-serif;
+            color: #FFFFFF;
+            font-size: 6em;
+        }
+
+            .home h1 span{
+                color: #FF4D5A;
+            }
+
+        .home p{
+            color: #a3a7b8;
+        }
+
+    .greeting section{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: absolute;
+    }
+
+        .greeting section a img{
+            height: 4em;
+        }
+
+        .greeting section a img:hover{
+            cursor: pointer;
+        }
+
+    .menu{
+        
+        height: 50%;
+        width: 50%;
+        position: absolute;
+        background-color: purple;
+        display: none;
     }
 
 /* Main area */
@@ -47,4 +89,17 @@ body{
 /* Footer area */
 .footer{
     background-color: purple;
+}
+
+
+/* Working with responsive design */
+
+@media (max-width: 500px){
+    body{
+        font-size: 11px;
+    }
+
+    .greeting section{
+        align-items:initial;
+    }
 }
