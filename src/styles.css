@@ -14,6 +14,15 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+::-webkit-scrollbar{
+    width: 0;
+    background-color: /* #0a0a0a; */ #1d1d1d; 
+}
+
+/* ::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #08FDD8);
+    border-radius: 8px;
+} */
 
 /* Greeting area */
 .greeting{
@@ -41,7 +50,16 @@ body{
         justify-content: center;
     }
 
-        .home h1{
+        #background{
+            position: fixed;
+            /* height: 200%;
+            top: 0%;
+            left: 50%; */
+            height: 20vw;
+            z-index: -1;
+        }
+
+        .title{
             font-family: 'Space Grotesk', sans-serif;
             color: #FFFFFF;
             font-size: 6em;
@@ -83,8 +101,45 @@ body{
 
 /* Main area */
 .main{
-    background-color: red;
+    overflow-x: hidden;
 }
+
+    .main section{
+        position: relative;
+        text-align: right;
+    }
+
+    .main section img{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-right: 8%;
+    }
+
+        .description{
+            position: absolute;
+            height: 50%;
+            width: 60%; 
+            top: 25%; 
+            text-align: left;
+            margin-left: 8%;
+        }
+
+            .description h1 span{
+                color: #FF4D5A;
+            }
+
+            .description p{
+                width: 50%;
+            }
+
+            .description hr{
+                width: 50%;
+                margin-top: 5%;
+            }
+
+            .description button{
+                margin-top: 5%;
+            }
 
 /* Footer area */
 .footer{
@@ -102,4 +157,8 @@ body{
     .greeting section{
         align-items:initial;
     }
+
+        .home p{
+            font-size: 16px;
+        }
 }
