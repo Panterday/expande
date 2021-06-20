@@ -1,3 +1,4 @@
+
 import { initParticles } from "./particles";
 import { scrollAnimations } from "./scroll-animations";
 

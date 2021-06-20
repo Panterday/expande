@@ -55,7 +55,7 @@ body{
             /* height: 200%;
             top: 0%;
             left: 50%; */
-            height: 20vw;
+            height: 50vw;
             z-index: -1;
         }
 
@@ -109,11 +109,12 @@ body{
         text-align: right;
     }
 
-    .main section img{
-        margin-top: 10%;
-        margin-bottom: 10%;
-        margin-right: 8%;
-    }
+        .main section img{
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 8%;
+            box-shadow: 0px 1px 10px black;
+        }
 
         .description{
             position: absolute;
@@ -123,6 +124,9 @@ body{
             text-align: left;
             margin-left: 8%;
         }
+            .description h1{
+                text-shadow: 2px 3px 10px black;
+            }
 
             .description h1 span{
                 color: #FF4D5A;
@@ -130,21 +134,51 @@ body{
 
             .description p{
                 width: 50%;
+                color: #FFFFFF;
             }
 
             .description hr{
                 width: 50%;
                 margin-top: 5%;
+                border: #FF4D5A solid 2px;
+                border-radius: 3px;
+
             }
 
             .description button{
                 margin-top: 5%;
+                background: #FF4D5A;
+                border: none;
+                border-radius: 20px;
+                font-size: 1.1em;
+                color: #FFFFFF;
+                height: 3em;
+                width: 8em;
+            }
+
+            .description button:hover{
+                background: #FFFFFF;
+                cursor: pointer;
+                color: #FF4D5A;
             }
 
 /* Footer area */
 .footer{
-    background-color: purple;
+    height: 10vh;
 }
+
+    .footer p{
+        height: 100%;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer hr{
+        width: 90%;
+        margin: 0 auto;
+    }
 
 
 /* Working with responsive design */
@@ -161,4 +195,41 @@ body{
         .home p{
             font-size: 16px;
         }
+
+    .main section{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+        .main section img{
+            position: initial;
+            margin: 0;
+            padding: 0%;
+        }
+
+        .description{
+            position: initial;
+            width: 100%;
+            margin: 0;
+            padding: 3%;
+        }
+
+            .description p{
+                width: 100%;
+                font-size: 2em;
+            }
+
+            .description hr{
+                margin: 0 auto;
+                margin-top: 8%;
+                width: 90%;
+            }
+
+            .description button{
+                margin-left: 3%;
+                height: 2.2em;
+                width: 6em;
+                font-size: 2em;
+            }
 }
