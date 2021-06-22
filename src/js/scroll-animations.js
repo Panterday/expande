@@ -1,18 +1,19 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import { setStateMenu } from './animations';
 
 gsap.registerPlugin(ScrollTrigger); 
 
 export const scrollAnimations = ()=>{
 
-    gsap.from('#background', {
+    /* gsap.from('#background', {
         scrollTrigger: {
             trigger: '#section-1 .description h1',
             scrub: true,
             start: 'top center'
         },
         opacity: 0
-    })
+    }) */
 
     gsap.from('#section-1 img', {
         scrollTrigger: {

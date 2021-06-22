@@ -9,6 +9,10 @@
 
 /* General settings */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #061321;
     font-family: 'Raleway', sans-serif;
@@ -82,12 +86,41 @@ body{
         position: absolute;
     }
 
-        .greeting section a img{
+        .greeting section img{
+            position: fixed;
+            z-index: 60;
             height: 4em;
         }
 
-        .greeting section a img:hover{
+        .greeting section img:hover{
             cursor: pointer;
+        }
+
+    .greeting nav{
+        background-color: #FF4D5A;
+        position: fixed;
+        display: none;
+        width: 50%;
+        height: 100%;
+        z-index: 40;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+        .greeting nav a{
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 1.4em;
+            padding: 3%;
+            width: 50%;
+            text-align: center;
+        }
+
+        .greeting nav a:hover{
+            border: solid 1px #FFFFFF;
+            border-radius: 6px;
+            color: #061321;
         }
 
     .menu{
@@ -114,6 +147,7 @@ body{
             margin-bottom: 10%;
             margin-right: 8%;
             box-shadow: 0px 1px 10px black;
+            z-index: 7;
         }
 
         .description{
@@ -123,6 +157,7 @@ body{
             top: 25%; 
             text-align: left;
             margin-left: 8%;
+            z-index: 9;
         }
             .description h1{
                 text-shadow: 2px 3px 10px black;
@@ -162,6 +197,33 @@ body{
                 color: #FF4D5A;
             }
 
+        .sub-description{
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            z-index: 8;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+            .sub-desc-text{
+                background-color: #FFFFFF;
+                width: 60%;
+                height: 100%;
+                margin-top: 10%;
+                padding: 1em;
+                display: none;
+            }
+
+                .sub-desc-text p{
+                    height: 100%;
+                    width: 62%;
+                    margin: 0 auto;
+                    border-radius: 4px;
+                    padding: 1em;
+                }
+
 /* Footer area */
 .footer{
     height: 10vh;
@@ -191,6 +253,10 @@ body{
     .greeting section{
         align-items:initial;
     }
+
+        .greeting nav{
+            width: 100%;
+        }
 
         .home p{
             font-size: 16px;

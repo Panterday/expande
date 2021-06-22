@@ -16,7 +16,7 @@ const loadImages = ()=>{
 
     document.querySelector('#section-4 img').src =promo;
 
-    document.querySelector('#background').src = back;
+    /* document.querySelector('#background').src = back; */
     
 }
 
