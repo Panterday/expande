@@ -20,7 +20,6 @@ body{
 
 ::-webkit-scrollbar{
     width: 0;
-    background-color: /* #0a0a0a; */ #1d1d1d; 
 }
 
 /* ::-webkit-scrollbar-thumb{
@@ -205,13 +204,13 @@ body{
             margin: 0 auto;
             display: flex;
             flex-direction: row-reverse;
+            overflow: hidden;
         }
 
             .sub-desc-text{
                 background-color: #FFFFFF;
                 width: 60%;
                 height: 100%;
-                margin-top: 10%;
                 padding: 1em;
                 display: none;
             }
@@ -223,6 +222,43 @@ body{
                     border-radius: 4px;
                     padding: 1em;
                 }
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .contact h1{
+        color: #FFFFFF;
+        text-shadow: 2px 3px 10px black;
+    }
+
+    .contact span{
+        color: #FF4D5A;
+    }
+
+    .contact p{
+        color: #FFFFFF;
+    }
+
+    .contact hr{
+        width: 90%;
+        margin-top: 5%;
+        border: #FF4D5A solid 2px;
+        border-radius: 3px;
+    }
+
+        .info-contact{
+            width: 90%;
+            text-align: center;
+        }
+
+            .info-contact p{
+                padding: 2em;
+                font-size: 1.5em;
+            }
+
 
 /* Footer area */
 .footer{
@@ -266,6 +302,7 @@ body{
         display: flex;
         flex-direction: column-reverse;
         height: 100vh;
+        justify-content: space-evenly;
     }
 
         .main section img{
@@ -297,5 +334,31 @@ body{
                 height: 2.2em;
                 width: 6em;
                 font-size: 2em;
+            }
+
+    #section-4{
+        justify-content: space-evenly;
+    }
+            
+        #section-4 h1{
+            font-size: 5em;
+        }
+
+        #section-4 img{
+            margin-bottom: 10em;
+            padding: 0%;
+        }
+    
+    .contact p{
+        font-size: 2em;
+        padding: 1em;
+    }
+
+        .info-contact{
+            padding: 3em;
+        }
+
+            .info-contact p{
+                padding: 2em;
             }
 }
